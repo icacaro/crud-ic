@@ -1,11 +1,51 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <title>CRUD</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   </head>
+
   <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
+    <h1>PROJETO SISTEMA DE CADASTRO IC</h1>
+    <div class="container">
+    <div class="header">
+    <span>Cadastro de Funcionários</span>
+    <button onclick="openModal()" id="new">Incluir</i></button>
+    </div> 
+    
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Função</th>
+            <th>Salário</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="modal-container">
+    <form>
+      <label for="m-nome">Nome</label>
+      <input id="m-nome"type="text" required>
+
+      <label for="m-funcao">Função</label>
+      <input id="m-funcao"type="text" required>
+      
+      <label for="m-salario">Salário</label>
+      <input id="m-salario"type="text" required>
+      <button id="btnSalvar">Salvar</button>  
+
+    </form>
+    </div>    
+
+
+  <script src="script.js"></script>
   </body>
 </html>
